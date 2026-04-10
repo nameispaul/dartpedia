@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28f90a29-98a5-46a3-81b7-45b2d7289d16" name="Changes" comment="">
+    <list default="true" id="28f90a29-98a5-46a3-81b7-45b2d7289d16" name="Changes" comment="Task: Define relationships with classes">
+      <change afterPath="$PROJECT_DIR$/command_runner/lib/src/exceptions.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cli/bin/cli.dart" beforeDir="false" afterPath="$PROJECT_DIR$/cli/bin/cli.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cli/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cli/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cli/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cli/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/command_runner/lib/command_runner.dart" beforeDir="false" afterPath="$PROJECT_DIR$/command_runner/lib/command_runner.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/command_runner/lib/src/command_runner_base.dart" beforeDir="false" afterPath="$PROJECT_DIR$/command_runner/lib/src/command_runner_base.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,11 +19,17 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/mnt/localdisk/develop/projects/dart/dartpedia" value="3C7c15ckEt35fqY6HO6Sr2cOx4F" />
+    </persistenceIdMap>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
     <option name="autoscrollToSource" value="true" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -50,7 +57,7 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/midgard/develop/flutter/bin/cache/dart-sdk",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "dart.settings",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   }
@@ -63,15 +70,45 @@
       <option name="presentableId" value="Default" />
       <updated>1775739831581</updated>
       <workItem from="1775836801185" duration="80000" />
-      <workItem from="1775836888905" duration="695000" />
+      <workItem from="1775836888905" duration="2412000" />
+      <workItem from="1775839322932" duration="182000" />
     </task>
+    <task id="LOCAL-00001" summary="Task: Define relationships with classes">
+      <option name="closed" value="true" />
+      <created>1775837882416</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1775837882416</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Task: Define relationships with classes">
+      <option name="closed" value="true" />
+      <created>1775837913181</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1775837913181</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Task: Define relationships with classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task: Define relationships with classes" />
+  </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>
