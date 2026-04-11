@@ -4,15 +4,29 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28f90a29-98a5-46a3-81b7-45b2d7289d16" name="Changes" comment="Chapter 7: Polish your CLI App">
-      <change afterPath="$PROJECT_DIR$/pubsec.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wikipedia/wikipedia/lib/src/model/article.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wikipedia/wikipedia/lib/src/model/search_results.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wikipedia/wikipedia/lib/src/model/summary.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wikipedia/wikipedia/lib/src/model/title_set.dart" afterDir="false" />
+    <list default="true" id="28f90a29-98a5-46a3-81b7-45b2d7289d16" name="Changes" comment="Chapter 8: Work with JSON data">
+      <change afterPath="$PROJECT_DIR$/cli/lib/src/commands/get_article.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/lib/src/commands/search.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/lib/src/logger.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wikipedia/lib/src/api/get_article.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wikipedia/lib/src/api/search.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wikipedia/lib/src/api/summary.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wikipedia/test/model_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wikipedia/test/test_data/cat_extract.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wikipedia/test/test_data/dart_lang_summary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wikipedia/test/test_data/open_search_response.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dartpedia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dartpedia.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli/bin/cli.dart" beforeDir="false" afterPath="$PROJECT_DIR$/cli/bin/cli.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli/lib/cli.dart" beforeDir="false" afterPath="$PROJECT_DIR$/cli/lib/cli.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli/pubspec.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cli/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cli/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/command_runner/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/command_runner/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli/test/cli_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/cli/test/cli_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubsec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wikipedia/wikipedia/lib/src/model/article.dart" beforeDir="false" afterPath="$PROJECT_DIR$/wikipedia/lib/src/model/article.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wikipedia/wikipedia/lib/src/model/search_results.dart" beforeDir="false" afterPath="$PROJECT_DIR$/wikipedia/lib/src/model/search_results.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wikipedia/wikipedia/lib/src/model/summary.dart" beforeDir="false" afterPath="$PROJECT_DIR$/wikipedia/lib/src/model/summary.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wikipedia/wikipedia/lib/src/model/title_set.dart" beforeDir="false" afterPath="$PROJECT_DIR$/wikipedia/lib/src/model/title_set.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +40,13 @@
     <persistenceIdMap>
       <entry key="_/mnt/localdisk/develop/projects/dart/dartpedia" value="3C7c15ckEt35fqY6HO6Sr2cOx4F" />
     </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,6 +71,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="3C7c15ckEt35fqY6HO6Sr2cOx4F" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -72,11 +96,16 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/midgard/develop/flutter/bin/cache/dart-sdk",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.smartKeys",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wikipedia/lib" />
+    </key>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="28f90a29-98a5-46a3-81b7-45b2d7289d16" name="Changes" comment="" />
@@ -89,7 +118,7 @@
       <workItem from="1775839322932" duration="1570000" />
       <workItem from="1775883589116" duration="4221000" />
       <workItem from="1775887829905" duration="94000" />
-      <workItem from="1775887939702" duration="1932000" />
+      <workItem from="1775887939702" duration="8431000" />
     </task>
     <task id="LOCAL-00001" summary="Task: Define relationships with classes">
       <option name="closed" value="true" />
@@ -123,17 +152,37 @@
       <option name="project" value="LOCAL" />
       <updated>1775885710814</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Chapter 8: Work with JSON data">
+      <option name="closed" value="true" />
+      <created>1775890153646</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1775890153646</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Task: Define relationships with classes" />
     <MESSAGE value="Chapter 6: Handle errors gracefully" />
     <MESSAGE value="Chapter 7: Polish your CLI App" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chapter 7: Polish your CLI App" />
+    <MESSAGE value="Chapter 8: Work with JSON data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chapter 8: Work with JSON data" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

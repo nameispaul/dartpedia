@@ -13,6 +13,9 @@ dependencies:
   http: ^1.6.0
   command_runner:
     path: ../command_runner # Points to the local command_runner package.
+  wikipedia:
+    path: ../wikipedia
+  logging: ^1.2.0
 
 dev_dependencies:
   lints: ^6.0.0
